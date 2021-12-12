@@ -20,7 +20,38 @@
                 <img src="Images/me1.JPG" alt="Image" width="300px" />
             </div>
         </div>
-        <h3 class="bio">Hi there, I am Abdullah. I am a web-developer. Besides programming, I enjoy theoretical computer science, machine learning, mathematics, memes, science fiction, movies, etc.</h3>
+        <div class="bio">
+            <div id="short-div">
+                <button id="btnLong">Long Bio</button>
+                <div class="short" id="shortBio">
+                    <h3>
+                        Hi there, I am Abdullah. I am a web-developer. Besides programming, I enjoy theoretical computer science, machine learning, mathematics, memes, science fiction, movies, etc.
+                    </h3>
+                </div>
+            </div>
+            <div id="long-div" style="display:none">
+                <button id="btnShort">Short Bio</button>
+                <div class="long">
+                    <h3>Hi there, I am Abdullah.</h3>
+                    <div class="collapsible">Education</div>
+                    <div class="content">
+                        <p>
+                            I've studied Computer Science at University of Dhaka.
+                            It has been a great personal and intellectual development journey for me.
+                            I made a great friend there.
+                        </p>
+                    </div>
+                    <div class="collapsible">Current Work</div>
+                    <div class="content">
+                        <p>
+                            Currently I am a Software Engineer at <a href="https://www.enosisbd.com/">Enosis Solutions</a>.
+                            I work on a web-application. The technology stack includes C#, MVC 5, Microsoft SQL server, JQuery, Bootstrap, etc.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
         <a href="https://www.facebook.com/abdullahal.thaki.7" class="fa fa-facebook"></a>
         <a href="https://twitter.com/liiniix_" class="fa fa-twitter"></a>
         <a href="https://github.com/liiniix" class="fa fa-github"></a>
@@ -30,10 +61,7 @@
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="Static/style.css"></script>
+    <script type="text/javascript" src="Static/script.js"></script>
 
 </body>
 </html>
