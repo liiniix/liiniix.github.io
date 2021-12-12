@@ -110,6 +110,9 @@ button{
     text-align: left;
     outline: none;
     font-size: 15px;
+    margin:auto;
+    width: 95%;
+    align-self:left;
   }
   
   .active, .collapsible:hover {
@@ -133,4 +136,8 @@ button{
   }
 strong{
     color: #5cb85c;
+}
+.content > div > .collapsible{
+    padding: 9px;
+    padding-left: 18px;
 }
