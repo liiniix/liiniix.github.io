@@ -11,7 +11,20 @@
 h2 {
     color: #96979c;
 }
+@media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+    .flex-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-self: center;
+        flex-direction: column;
+    }
 
+}
+  
 a:hover {
     background-color: cornflowerblue;
     transition: 2s ease;
