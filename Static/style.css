@@ -131,4 +131,6 @@ button{
   .content {
     display: none;
   }
-
+strong{
+    color: #5cb85c;
+}
