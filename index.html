@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdullah</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
     <link rel="stylesheet" href="Static/style.css">
 
 </head>
@@ -127,6 +128,38 @@
                                     Complex algoritms ie NP, N-SPACE problems are approximated and they are tracable now. Cool, huh?
                                 </p>
                             </div>
+                            <div class="collapsible">Hashkell/Lambda Calculus</div>
+                            <div class="content">
+                                <h3>QuickSort in Haskell</h3>
+                                <pre><code class="language-haskell">
+quicksort :: Ord a => [a] -> [a]
+quicksort []     = []
+quicksort (p:xs) = (quicksort lesser) ++ [p] ++ (quicksort greater)
+    where
+        lesser  = filter (< p) xs
+        greater = filter (>= p) xs
+                                </code></pre>
+                                <h3>QuickSort in C</h3>
+                                <pre><code class="language-c">
+void quicksort(int v[], int left, int right)
+{
+    int i, last;
+    void swap(int v[], int i, int j);
+
+    if (left >= right)
+        return;
+    swap(v, left, (left + right)/2);
+    last = left;
+    for (i = left+1; i <= right; i++)
+        if (v[i] < v[left])
+            swap(v, ++last, i);
+    swap(v, left, last);
+    quicksort(v, left, last-1);
+    quicksort(v, last+1, right);
+}
+                                </code></pre>
+                                <p>How the heck is that possible? 😲</p>
+                            </div>
                         </div>
                     </div>
                     
@@ -150,6 +183,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="Static/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/haskell.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
 
 </body>
 </html>
